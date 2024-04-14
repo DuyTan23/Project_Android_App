@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.APP_BAN_SACH"
+        tools:targetApi="31">
+        <activity
+            android:name=".sach_yeuthich"
+            android:exported="false" />
+        <activity
+            android:name=".giohang_ca_nhan"
+            android:exported="false" />
+        <activity
+            android:name=".chitiet_sach_home"
+            android:exported="false" />
+        <activity
+            android:name=".danh_muc_sach"
+            android:exported="false" />
+        <activity
+            android:name=".chitiet_sach_ql"
+            android:exported="false" />
+        <activity
+            android:name=".d"
+            android:exported="false" />
+        <activity
+            android:name=".home_ql_theloai"
+            android:exported="false" />
+        <activity
+            android:name=".dialog_add_tacgia"
+            android:exported="false" />
+        <activity
+            android:name=".home_ql_nhaxb"
+            android:exported="false" />
+        <activity
+            android:name=".home_ql_tacgia"
+            android:exported="false" />
+        <activity
+            android:name=".home_ql_sach"
+            android:exported="false" />
+        <activity
+            android:name=".home_ql_admin"
+            android:exported="false" />
+        <activity
+            android:name=".thong_bao"
+            android:exported="false" />
+        <activity
+            android:name=".form_mo_the"
+            android:exported="false" />
+        <activity
+            android:name=".dv_the"
+            android:exported="false" />
+        <activity
+            android:name=".update_tk_mk"
+            android:exported="false" />
+        <activity
+            android:name=".update_ngdung"
+            android:exported="false" />
+        <activity
+            android:name=".dangky2_ngdung"
+            android:exported="false" />
+        <activity
+            android:name=".dangky_ngdung"
+            android:exported="false" />
+        <activity
+            android:name=".chitiet_ngdung"
+            android:exported="false" />
+        <activity
+            android:name=".tai_khoang_ngdung"
+            android:exported="false" />
+        <activity
+            android:name=".login_ngdung"
+            android:exported="false" />
+        <activity
+            android:name=".login"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

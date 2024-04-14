@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".chitiet_ngdung"
+    android:orientation="vertical"
+    android:background="@drawable/hinh_nen_chitiet_ngdung">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/btn_previou"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:background="@drawable/icon_previou"
+            android:layout_marginTop="35dp"
+            android:layout_marginLeft="5dp">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="THÔNG TIN NGƯỜI DÙNG"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:textColor="#020E47"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="35dp"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginLeft="150dp"
+            android:elevation="5dp"
+            android:translationZ="6dp"
+            android:background="@color/white"
+            app:cardCornerRadius="100dp"
+            android:layout_marginTop="0dp">
+            <ImageView
+                android:id="@+id/img_avatar"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </ImageView>
+
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/car_log_out"
+            android:layout_width="90dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginLeft="35dp"
+            android:background="@color/black"
+            app:backgroundTint="@null"
+            android:elevation="5dp"
+            android:translationZ="6dp"
+            app:cardCornerRadius="10dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="LOG OUT"
+                android:gravity="center"
+                android:textSize="20dp"
+                android:drawableLeft="@drawable/icon_log_out"
+                android:paddingLeft="5dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="400dp"
+        android:layout_marginLeft="23dp"
+        android:elevation="5dp"
+        android:translationZ="6dp"
+        android:background="@color/white"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="40dp">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:columnCount="2"
+            android:rowCount="1">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:text="Thong tin cá nhân"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textColorHighlight="#113FB3"
+                >
+            </TextView>
+            <ImageView
+                android:id="@+id/btn_update_ngdung"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/update"
+                android:layout_gravity="right"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="5dp">
+
+            </ImageView>
+
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="350dp"
+            android:layout_height="350dp"
+            android:columnCount="3"
+            android:rowCount="5"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center"
+            android:paddingLeft="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:text="Họ và tên"
+                android:textSize="20dp">
+            </TextView>
+            <TextView
+                android:id="@+id/txtv_ten"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:text="Thông tin cá nhân"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+                android:textStyle="bold">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_column="0"
+                android:layout_row="1"
+                android:text="Giới tính"
+                android:textSize="20dp">
+            </TextView>
+            <TextView
+                android:id="@+id/txtv_gioitinh"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_column="1"
+                android:layout_row="1"
+                android:text="Thông tin cá nhân"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+                android:textStyle="bold">
+            </TextView>
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_column="0"
+                android:layout_row="2"
+                android:text="Số điện thoại"
+                android:textSize="20dp">
+            </TextView>
+            <TextView
+                android:id="@+id/txtv_sdt"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_column="1"
+                android:layout_row="2"
+                android:text="Thông tin cá nhân"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_column="0"
+                android:layout_row="3"
+                android:text="Địa chỉ"
+                android:textSize="20dp">
+            </TextView>
+            <TextView
+                android:id="@+id/txtv_diachi"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_column="1"
+                android:layout_row="3"
+                android:text="Thông tin cá nhân"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+                android:textStyle="bold">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_column="0"
+                android:layout_row="4"
+                android:text="Ngay sinh"
+                android:textSize="20dp">
+            </TextView>
+            <TextView
+                android:id="@+id/txtv_ngaysinh"
+                android:layout_width="wrap_content"
+                android:layout_height="70dp"
+                android:layout_column="1"
+                android:layout_row="4"
+                android:text="Thông tin cá nhân"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:paddingLeft="10dp">
+            </TextView>
+
+
+        </GridLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="350dp"
+        android:layout_height="130dp"
+        android:layout_marginLeft="23dp"
+        android:elevation="5dp"
+        android:translationZ="6dp"
+        android:background="@color/white"
+        app:cardCornerRadius="20dp"
+        android:layout_marginTop="30dp">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:columnCount="2"
+            android:rowCount="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Thong tin bổ sung"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:paddingLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_column="0"
+                android:layout_row="0">
+            </TextView>
+        </GridLayout>
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:columnCount="2"
+            android:rowCount="1"
+            android:layout_marginTop="50dp"
+            >
+            <TextView
+                android:layout_width="130dp"
+                android:layout_height="70dp"
+                android:layout_column="0"
+                android:layout_row="0"
+                android:text="Địa chỉ nhận hàng"
+                android:textSize="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp">
+            </TextView>
+            <TextView
+                android:id="@+id/txtv_diachinhan"
+                android:layout_width="200dp"
+                android:layout_height="70dp"
+                android:layout_column="1"
+                android:layout_row="0"
+                android:text="Thông tin cá nhân"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                >
+            </TextView>
+        </GridLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

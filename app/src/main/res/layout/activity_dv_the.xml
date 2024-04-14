@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".dv_the"
+    android:orientation="vertical"
+    android:background="#DBE2FD">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp">
+        <ImageButton
+            android:id="@+id/btn_previou_the"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_previou">
+
+        </ImageButton>
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingLeft="75dp"
+            android:text="Thẻ của tôi"
+            android:textSize="30sp"
+            android:textStyle="bold"></TextView>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        app:cardCornerRadius="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp"
+        android:background="@drawable/custom_linnerlayout_car"
+        android:orientation="vertical"
+        android:gravity="center">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thẻ thành viên"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:padding="10dp">
+        </TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thẻ thành viên sẽ hỗ trợ thành viên thân thiết 5% tổng giá trị đơn hàng khi mua sản phẩm trên shop Online và tại các cửa hàng trên toàn quốc "
+            android:textSize="20dp"
+            android:padding="10dp"
+            android:gravity="center_horizontal">
+
+        </TextView>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/black">
+
+        </View>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Thẻ có hiệu lực trọn đời"
+            android:textSize="22dp"
+            android:textColor="#054D85">
+        </TextView>
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Thẻ được kích hoạt ngay sau khi tạo tài khoảng"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:paddingLeft="20dp"
+        android:paddingTop="50dp">
+
+    </TextView>
+
+
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="200dp"
+        android:background="@drawable/hinh_nen_chitiet_ngdung"
+        android:orientation="horizontal"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="50dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            app:cardCornerRadius="100dp"
+            android:elevation="5dp"
+            android:translationZ="6dp"
+            android:layout_marginTop="60dp">
+            <ImageView
+                android:id="@+id/img_avatar_the"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                app:srcCompat="@drawable/gio_hang" />
+
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="280dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thẻ cá nhân"
+                android:textSize="20dp"
+                android:padding="10dp"
+                android:layout_marginLeft="55dp">
+
+            </TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Họ và tên"
+                    android:textSize="18dp"
+                    android:padding="5dp">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/txtv_ten_the"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Phan Duy Tân"
+                    android:layout_marginLeft="10dp">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Giới tính"
+                    android:textSize="18dp"
+                    android:padding="5dp">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/txtv_gioitinh_the"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nam"
+                    android:layout_marginLeft="10dp">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày sinh"
+                    android:textSize="18dp"
+                    android:padding="5dp">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/txtv_ngaysinh_the"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="05-05-2003"
+                    android:layout_marginLeft="10dp">
+
+                </TextView>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Số đt"
+                    android:textSize="18dp"
+                    android:padding="5dp">
+
+                </TextView>
+                <TextView
+                    android:id="@+id/txtv_sdt_the"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0392913063"
+                    android:layout_marginLeft="10dp">
+
+                </TextView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".update_ngdung"
+    android:orientation="vertical"
+    android:background="@drawable/hinh_nen_chitiet_ngdung">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="10dp">
+        <ImageButton
+            android:id="@+id/btn_previou_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/icon_previou">
+
+        </ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sửa hồ sơ"
+            android:textSize="35dp"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:gravity="center">
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:elevation="5dp"
+            android:translationZ="6dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginRight="10dp">
+            <ImageButton
+                android:id="@+id/btn_open_camera"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/icon_camera"
+
+                ></ImageButton>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:cardCornerRadius="100dp"
+            android:elevation="5dp"
+            android:translationZ="6dp">
+            <ImageView
+                android:id="@+id/img_avatar_up"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                app:srcCompat="@drawable/gio_hang" />
+
+        </androidx.cardview.widget.CardView>
+
+
+
+
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:elevation="5dp"
+            android:translationZ="6dp"
+            app:cardCornerRadius="10dp"
+            android:layout_marginLeft="10dp">
+            <ImageButton
+                android:id="@+id/btn_open_folder_img"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/icon_folder"
+
+                ></ImageButton>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="580dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tên"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/edt_up_ten"
+                    android:layout_width="330dp"
+                    android:layout_height="55dp"
+                    android:hint="ten"
+                    android:textSize="22dp">
+
+                </EditText>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#706A6A">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Giới tính"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <RadioGroup
+                    android:id="@+id/radi_up_gt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/rabu_up_nam"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="80dp"
+                        android:text="Nam"
+                        android:textSize="20dp">
+
+                    </RadioButton>
+
+                    <RadioButton
+                        android:id="@+id/rabu_up_nu"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="50dp"
+                        android:text="Nữ"
+                        android:textSize="20dp">
+
+                    </RadioButton>
+
+                </RadioGroup>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ngày sinh"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <Button
+                    android:id="@+id/btnOpenDatePicker_up"
+                    android:layout_width="250dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="60dp"
+                    android:text="Chọn ngày sinh của bạn" />
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#706A6A">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Số điện thoại"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/edt_up_sdt"
+                    android:layout_width="330dp"
+                    android:layout_height="55dp"
+                    android:hint="sdt"
+                    android:textSize="22dp">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Địa chỉ"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/edt_up_diachi"
+                    android:layout_width="330dp"
+                    android:layout_height="55dp"
+                    android:hint="địa chỉ"
+                    android:textSize="22dp">
+
+                </EditText>
+
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#706A6A">
+
+            </View>
+
+            <LinearLayout
+                android:layout_width="350dp"
+                android:layout_height="120dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nới nhận hàng"
+                    android:textSize="25dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <EditText
+                    android:id="@+id/edt_up_noinhan"
+                    android:layout_width="330dp"
+                    android:layout_height="80dp"
+                    android:hint="nơi nhận hàng"
+                    android:textSize="22dp">
+
+                </EditText>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="5dp">
+        <Button
+            android:id="@+id/btn_update_save"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="LƯU"
+            android:layout_marginRight="20dp">
+
+        </Button>
+        <Button
+            android:id="@+id/btn_update_mk"
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:text="ĐỔI MK">
+
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>

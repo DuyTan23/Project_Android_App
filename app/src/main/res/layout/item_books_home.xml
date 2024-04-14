@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="25dp"
+    android:elevation="5dp"
+    android:translationZ="6dp"
+    android:layout_marginTop="10dp"
+    android:layout_marginEnd="10dp">
+    <LinearLayout
+        android:id="@+id/item_books_home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:id="@+id/img_hinhsach_danhmuc"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/hinhgai">
+
+        </ImageView>
+        <TextView
+            android:id="@+id/txtv_tensach_danhmuc"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="Ten Sach"
+            android:textStyle="bold"
+            android:textSize="25dp">
+
+        </TextView>
+        <TextView
+            android:id="@+id/txtv_giasach_danhmuc"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="Gia sach"
+            android:textColor="#F60505"
+            android:textSize="15dp"
+            android:gravity="center">
+
+        </TextView>
+    </LinearLayout>
+
+
+</androidx.cardview.widget.CardView>

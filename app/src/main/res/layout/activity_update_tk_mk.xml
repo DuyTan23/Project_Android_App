@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".update_tk_mk"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingLeft="10dp">
+        <ImageButton
+            android:id="@+id/btn_previou_up_mk"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/icon_previou">
+
+        </ImageButton>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ĐỔI MẬT KHẨU"
+            android:textSize="20dp"
+            android:textStyle="bold"></TextView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mật khẩu hiện tại"
+                android:textSize="25dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/edt_up_pass_old"
+                android:layout_width="330dp"
+                android:layout_height="55dp"
+                android:hint="Nhâ mật khẩu hiện tại"
+                android:textSize="22dp"
+                android:inputType="textPassword">
+
+            </EditText>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mật khẩu mới"
+                android:textSize="25dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/edt_up_pass_new"
+                android:layout_width="330dp"
+                android:layout_height="55dp"
+                android:hint="Nhập mật khẩu mới"
+                android:textSize="22dp"
+                android:inputType="textPassword">
+
+            </EditText>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Xác nhận mật khẩu mới"
+                android:textSize="25dp"
+                android:textStyle="bold">
+
+            </TextView>
+
+            <EditText
+                android:id="@+id/edt_up_pass_new_xn"
+                android:layout_width="330dp"
+                android:layout_height="55dp"
+                android:hint="Xác nhận mật khẩu mới"
+                android:textSize="22dp"
+                android:inputType="textPassword">
+
+            </EditText>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:text="Đổi mật khẩu có thể gây ra một số vấn đề liên quan đến bảo mật xin thận trọng"
+            android:textSize="18dp"
+            android:background="#F6F0F0">
+
+        </TextView>
+
+        <CheckBox
+            android:id="@+id/check_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đồng ý là xong bị gì tự chịu"
+            android:textSize="15dp"
+            android:layout_marginLeft="-60dp"></CheckBox>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+        <Button
+            android:id="@+id/btn_agree_change_pass"
+            android:layout_width="230dp"
+            android:layout_height="45dp"
+            android:background="@drawable/custom_btn_update_mk"
+            app:backgroundTint="@null"
+            android:text="Xác nhận"
+            android:textSize="20dp">
+
+        </Button>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
